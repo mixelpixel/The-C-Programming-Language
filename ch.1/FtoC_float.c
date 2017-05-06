@@ -2,7 +2,6 @@
 
 /* print Fahrenheit-Celsius table
     for fahr = 0, 20, ..., 300; floating-point version */
-
 int main()
 {
   float fahr, celsius;
@@ -21,4 +20,3 @@ int main()
   }
   return 0;
 }
-

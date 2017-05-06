@@ -1,7 +1,5 @@
-// http://stackoverflow.com/questions/43819099/how-to-not-invoke-warning-type-specifier-missing?noredirect=1#43819145
-
 #include <stdio.h>
-#include <stdlib.h>
+
 /* print Fahrenheit-Celsius table
     for fahr = 0, 20, ..., 300 */
 int main()
@@ -21,4 +19,3 @@ int main()
   }
   return EXIT_SUCCESS;
 }
-
