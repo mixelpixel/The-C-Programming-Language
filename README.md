@@ -50,3 +50,6 @@ increment step**
 **is executed, and the condition re-evaluated. The loop terminates if the condition has become false.** As with the while, the body of the loop can be a single statement or a group of statements enclosed in braces. The initialization, condition and increment can be any expressions.  
 The choice between while and for is arbitrary, based on which seems clearer. The for is usually appropriate for loops in which the initialization and increment are single statements and logically related, since it is more compact than while and it keeps the loop control statements together in one place."  
 [Fahrenheit to Celsius conversion with a "for" statement](ch1/FtoC_for_reverse.c) (Exercise 1-5)  
+# 1.4 Symbolic Constants  
+[Fahrenheit to Celsius conversion using SYMBOLIC CONSTANTS](ch1/FtoC_for_SYMBOL.c)  
+# 1.5 Character Input and Output  
