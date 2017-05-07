@@ -42,7 +42,7 @@ Converting Fahrenheit and Celsius with a "while" statement:
 [Fahrenheit to Celsius conversion with a "for" statement](ch1/FtoC_for.c)  
 "The for statement is a loop, a generalization of the while. If you compare it to the earlier while, its operation should be clear. Within the parentheses, there are three parts, separated by semicolons. **The first part, the initialization**  
 `fahr = 0`  
-is done once, before the loop proper is entered. **The second part is the test or condition that controls the loop:**  
+**is done once, before the loop proper is entered. The second part is the test or condition that controls the loop:**  
 `fahr <= 300`  
 **This condition is evaluated; if it is true, the body of the loop (here a single ptintf) is executed. Then the  
 increment step**  
