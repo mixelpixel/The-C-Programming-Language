@@ -36,8 +36,8 @@ int main()        // <--------- function return type declaration
 # 1.2 Variables and Arithmetic Expressions  
 Converting Fahrenheit and Celsius with a "while" statement:  
 [Fahrenheit to Celsius conversion: integer](ch1/FtoC.c)  
-[Fahrenheit to Celsius conversion: floating-point](ch1/FtoC_float.c)  
-[Celsius to Fahrenheit conversion: floating point](ch1/CtoF_float.c)  
+[Fahrenheit to Celsius conversion: floating-point](ch1/FtoC_float.c) (Exercise 1-3)  
+[Celsius to Fahrenheit conversion: floating point](ch1/CtoF_float.c) (Exercise 1-4)  
 # 1.3 The for statement  
 [Fahrenheit to Celsius conversion with a "for" statement](ch1/FtoC_for.c)  
 "The for statement is a loop, a generalization of the while. If you compare it to the earlier while, its operation should be clear. Within the parentheses, there are three parts, separated by semicolons. **The first part, the initialization**  
@@ -49,3 +49,4 @@ increment step**
 `fahr = fahr + 20`  
 **is executed, and the condition re-evaluated. The loop terminates if the condition has become false.** As with the while, the body of the loop can be a single statement or a group of statements enclosed in braces. The initialization, condition and increment can be any expressions.  
 The choice between while and for is arbitrary, based on which seems clearer. The for is usually appropriate for loops in which the initialization and increment are single statements and logically related, since it is more compact than while and it keeps the loop control statements together in one place."  
+[Fahrenheit to Celsius conversion with a "for" statement](ch1/FtoC_for_reverse.c) (Exercise 1-5)  
