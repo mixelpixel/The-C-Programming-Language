@@ -7,9 +7,9 @@ For the C language standards: http://stackoverflow.com/a/83763/5225057
 For an overview of K&R vs other C standards: http://www.electronicdesign.com/dev-tools/what-s-difference-between-c-now-and-then  
 
 # Chapter 1 - A Tutorial Introduction  
-# 1.1 Getting Started    
+**1.1 Getting Started**    
 For example, the first exercise does not include declaring a function return type and setting a return value:  
-```
+```c
 #include <stdio.h>
 
 main()
@@ -25,7 +25,7 @@ return_type function_name( parameter list )
 }
 ```
 ...like so:  
-```
+```c
 #include <stdio.h>
 
 int main()
