@@ -1,2 +1,36 @@
 # The C Programming Language
-Reading the seminal (if not outdated) book by By Brian W. Kernighan and Dennis M. Ritchie
+Reading the seminal (if not outdated) book by By Brian W. Kernighan and Dennis M. Ritchie.  
+
+This book is a little outdated, but nevertheless, well written.  
+For a list of C programming books: http://stackoverflow.com/a/562377/5225057  
+For the C language standards: http://stackoverflow.com/a/83763/5225057  
+For an overview of K&R vs other C standards: http://www.electronicdesign.com/dev-tools/what-s-difference-between-c-now-and-then  
+
+# Chapter 1 - A Tutorial Introduction  
+# 1.1 Getting Started    
+For example, the first exercise does not include declaring a function return type and setting a return value:  
+```
+#include <stdio.h>
+
+main()
+{
+  printf("hello, world\n");
+}  
+```
+...functions should instead be written to the following form:  
+```
+return_type function_name( parameter list )
+{
+   body of the function
+}
+```
+...like so:  
+```
+#include <stdio.h>
+
+int main()
+{
+  printf("hello, world\n");
+  return 0;
+}
+```
