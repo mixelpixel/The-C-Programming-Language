@@ -34,3 +34,7 @@ int main()        // <--------- function return type declaration
   return 0;       // <-------------------- function return value
 }
 ```
+# 1.2 Variables and Arithmetic Expressions
+[Fahrenheit to Celsius conversion - integer](ch.1/FtoC.c)
+[Fahrenheit to Celsius conversion - floating point](ch.1/FtoC_float.c)
+[Celsius to Fahrenheit conversion - floating point](ch.1/CtoF_float.c)
