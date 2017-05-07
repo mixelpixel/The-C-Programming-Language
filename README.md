@@ -39,7 +39,7 @@ Converting Fahrenheit and Celsius with a "while" statement:
 [Fahrenheit to Celsius conversion: floating-point](ch1/FtoC_float.c)  
 [Celsius to Fahrenheit conversion: floating point](ch1/CtoF_float.c)  
 # 1.3 The for statement  
-[Fahrenheit to Celsius conversion with a "for" statement](ch1/FtoC_for.c)
+[Fahrenheit to Celsius conversion with a "for" statement](ch1/FtoC_for.c)  
 "The for statement is a loop, a generalization of the while. If you compare it to the earlier while, its operation should be clear. Within the parentheses, there are three parts, separated by semicolons. **The first part, the initialization**  
 fahr = 0  
 is done once, before the loop proper is entered. **The second part is the test or condition that controls the loop:**  
