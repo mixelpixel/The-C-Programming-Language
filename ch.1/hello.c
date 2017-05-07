@@ -7,9 +7,12 @@
 int main()                     //           that received no argument values
 {                              //  statements of main are enclosed in braces
   printf("hello, world\n");    //         main calls library function printf
-  return 0;                    // declaring function return type and setting return value not in K&R
+  return 0;
 }                              //       to print this sequence of characters
                                //        \n represents the newline character
+                               //   NOTE: declaring function return type and
+                               //     setting the function's return value is
+                               //                               not in K&R C
 
 /* C SYNTAX NOTE: these programs produce identical output:
 
