@@ -8,7 +8,7 @@ For an overview of K&R vs other C standards: http://www.electronicdesign.com/dev
 
 # Chapter 1 - A Tutorial Introduction  
 **1.1 Getting Started**    
-For example, the first exercise does not include declaring a function return type and setting a return value:  
+As an example of what is now an "outdated" style of C in the book, the first exercise does not include declaring a functions return type and setting a return value:  
 ```c
 #include <stdio.h>
 
@@ -28,9 +28,9 @@ return_type function_name( parameter list )
 ```c
 #include <stdio.h>
 
-int main()
+int main()        // <--------- function return type declaration
 {
   printf("hello, world\n");
-  return 0;
+  return 0;       // <-------------------- function return value
 }
 ```
