@@ -8,7 +8,7 @@ For an overview of K&R vs other C standards: http://www.electronicdesign.com/dev
 
 # Chapter 1 - A Tutorial Introduction  
 # 1.1 Getting Started  
-As an example of what is now an "outdated" style of C in the book, [the first exercise](ch.1/hello.c) does not include declaring a functions return type and setting a return value:  
+As an example of what is now an "outdated" style of C in the book, [the first exercise](ch1/hello.c) does not include declaring a functions return type and setting a return value:  
 ```c
 #include <stdio.h>
 
@@ -35,6 +35,6 @@ int main()        // <--------- function return type declaration
 }
 ```
 # 1.2 Variables and Arithmetic Expressions  
-[Fahrenheit to Celsius conversion: integer](ch.1/FtoC.c)  
-[Fahrenheit to Celsius conversion: floating-point](ch.1/FtoC_float.c)  
-[Celsius to Fahrenheit conversion: floating point](ch.1/CtoF_float.c)  
+[Fahrenheit to Celsius conversion: integer](ch1/FtoC.c)  
+[Fahrenheit to Celsius conversion: floating-point](ch1/FtoC_float.c)  
+[Celsius to Fahrenheit conversion: floating point](ch1/CtoF_float.c)  
