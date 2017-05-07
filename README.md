@@ -34,7 +34,7 @@ int main()        // <--------- function return type declaration
 }
 ```
 # 1.2 Variables and Arithmetic Expressions  
-Converting Fahrenheit and Celsius with a "while" statement:
+Converting Fahrenheit and Celsius with a "while" statement:  
 [Fahrenheit to Celsius conversion: integer](ch1/FtoC.c)  
 [Fahrenheit to Celsius conversion: floating-point](ch1/FtoC_float.c)  
 [Celsius to Fahrenheit conversion: floating point](ch1/CtoF_float.c)  
