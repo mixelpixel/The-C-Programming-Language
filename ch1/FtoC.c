@@ -17,5 +17,5 @@ int main()
       printf("%3d %6d\n", fahr, celsius);
       fahr = fahr + step;
   }
-  return EXIT_SUCCESS;
+  return 0;
 }
