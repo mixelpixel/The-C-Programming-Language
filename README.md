@@ -1,7 +1,7 @@
 # The C Programming Language
 Reading the seminal (if not outdated) book by By Brian W. Kernighan and Dennis M. Ritchie.  
 
-This book is a little outdated, but nevertheless, very well written. Click these links for an [overview of K&R vs other C standards](http://www.electronicdesign.com/dev-tools/what-s-difference-between-c-now-and-then); a [list of C programming books](http://stackoverflow.com/a/562377/5225057), and, the [C language standards](http://stackoverflow.com/a/83763/5225057)  
+This book is a little outdated, but nevertheless, very well written. Click these links for an [overview of K&R vs other C standards](http://www.electronicdesign.com/dev-tools/what-s-difference-between-c-now-and-then); for a [list of C programming books](http://stackoverflow.com/a/562377/5225057), or, for the [C language standards](http://stackoverflow.com/a/83763/5225057)  
 
 # Chapter 1 - A Tutorial Introduction  
 # 1.1 Getting Started  
