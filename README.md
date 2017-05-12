@@ -55,8 +55,8 @@ The choice between while and for is arbitrary, based on which seems clearer. The
 # 1.4 Symbolic Constants  
 [Fahrenheit to Celsius conversion using SYMBOLIC CONSTANTS](ch1/FtoC_for_SYMBOL.c)  
 # 1.5 Character Input and Output  
-c = getchar();
-putchar(c); - "Calls to putchar and printf may be interleaved"
+c = getchar();  
+putchar(c); - "Calls to putchar and printf may be interleaved"  
 ## 1.5.1 File Copying  
 ```
 read a character  
@@ -65,7 +65,7 @@ read a character
         read next character
 ```
 
-Note: I am a little confused about how "file" is being used for "file input" and how "character" is being used - getchar(); appears to read in an entire line of text in the while loop, and not "one char at a time" nor one "file" at a time. Perhaps this is just loose use of terms (or my loose understanding), but I am left a little confused as to newline vs. EOF. Exercise 1-6 results in 0 or 1, but EOF - per Exercise 1-7 - has a value of -1.
+I am a little confused about how "file" is being used for "file input" and how "character" is being used - getchar(); appears to read in an entire line of text in the while loop, and not "one char at a time" nor one "file" at a time. Perhaps this is just loose use of terms (or my loose understanding), but I am left a little confused as to newline vs. EOF. Exercise 1-6 results in 0 or 1, but EOF - per Exercise 1-7 - has a value of -1.
 
 [file input version 1](ch1/file_copying_v1.c)  
 [file input version 2](ch1/file_copying_v2.c)  
