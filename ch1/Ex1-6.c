@@ -18,7 +18,7 @@ int main()
 {
   printf("*************************************************************\n");
   printf("Press a key, some keys or a combination and then press ENTER.\n");
-  printf("Ctrl+d will enter an EOF (ctrl+z on Win)  & ctrl+c will exit.\n");
+  printf("Ctrl+d will enter an EOF (ctrl+z on Win) or ctrl+c will exit.\n");
   printf("*************************************************************\n\n");
 
   printf("*****************************************************************\n\
