@@ -32,7 +32,7 @@ int main()
   printf("*****************************************************************\n\
 ...and therefore the expression 'getchar() != EOF' evaluates to %d\n", c != EOF);
   printf("*****************************************************************\n");
-  printf("...and 'getchar() = EOF' evaluates to %d\n", c = EOF);
+  printf("...and therefore the expression 'getchar() = EOF' evaluates to %d\n", c == EOF);
   printf("*****************************************************************\n");
 
   return 0;
