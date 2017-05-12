@@ -72,4 +72,4 @@ read a character
 [file input version 2](ch1/file_copying_v2.c)  
 [Exercise 1-6](ch1/Ex1-6.c)  
 [Exercise 1-7](ch1/Ex1-7.c)  
-##1.5.2 Character Counting  
+## 1.5.2 Character Counting  
