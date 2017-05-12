@@ -65,7 +65,8 @@ read a character
         read next character
 ```
 
-I am a little confused about how "file" is being used for "file input" and how "character" is being used - getchar(); appears to read in an entire line of text in the while loop, and not "one char at a time" nor one "file" at a time. Perhaps this is just loose use of terms (or my loose understanding), but I am left a little confused as to newline vs. EOF. Exercise 1-6 results in 0 or 1, but EOF - per Exercise 1-7 - has a value of -1. Okay... so EOF = -1 and `getchar() != EOF` evaluates to either 0 (false) or 1 (true)... So why does ctrl+d 0? I see that ctrl+c and ctrl+z don't evaluate they simple exit from the program. Ah-ha - it appears that C simply does not have a type class of Boolean and achieves a true/false distinction where zero is false and non-zero is true. Per: https://www.le.ac.uk/users/rjm1/cotter/page_37.htm  
+1. I am a little confused about how "file" is being used for "file input" and how "character" is being used - `getchar();` appears to read in an entire line of text in the while loop, and not "one char at a time" nor one "file" at a time... Perhaps this is just loose use of terms (or my loose understanding), but I am left a little confused as to newline vs. EOF.  
+2. Exercise 1-6's evaluation results in 0 or 1, but EOF - per Exercise 1-7 - has a value of -1. Okay... so EOF = -1 and `getchar() != EOF` evaluates to either 0 (false) or 1 (true)... So why/how does ctrl+d = -1? I see that ctrl+c and ctrl+z don't evaluate they simple exit from the program. Ah-ha - it appears that C simply does not have a type class of Boolean and achieves a true/false distinction where zero is false and non-zero is true. Per: https://www.le.ac.uk/users/rjm1/cotter/page_37.htm But why/how does `getchar() = EOF` always evaluate to -1?  
 
 [file input version 1](ch1/file_copying_v1.c)  
 [file input version 2](ch1/file_copying_v2.c)  
