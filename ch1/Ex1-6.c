@@ -32,6 +32,7 @@ int main()
   printf("*****************************************************************\n\
 ...and therefore the expression 'getchar() != EOF' evaluates to %d\n", c != EOF);
   printf("*****************************************************************\n");
+  /* NOTE the difference between assignment = and equality evaluation == */
   printf("...and therefore the expression 'getchar() = EOF' evaluates to %d\n", c == EOF);
   printf("*****************************************************************\n");
 
