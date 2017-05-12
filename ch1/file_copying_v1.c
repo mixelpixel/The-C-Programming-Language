@@ -21,5 +21,5 @@ int main()
         c = getchar();
     }
 
-    return = 0;
+    return 0;
 }
