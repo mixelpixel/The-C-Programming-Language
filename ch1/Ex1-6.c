@@ -16,10 +16,10 @@ respond.
 
 int main()
 {
-  printf("*************************************************************\n");
-  printf("Press a key, some keys or a combination and then press ENTER.\n");
-  printf("Ctrl+d will enter an EOF (ctrl+z on Win) or ctrl+c will exit.\n");
-  printf("*************************************************************\n\n");
+  printf("*******************************************************\n");
+  printf("Press a key or a sequence of keys and then press ENTER.\n");
+  printf("Or, press ctrl+d, ctrl+z, or ctrl+c to exit.\n");
+  printf("*******************************************************\n\n");
 
   printf("*****************************************************************\n\
 In this instance the expression 'getchar() != EOF' evaluated to %d\n", getchar() != EOF);
