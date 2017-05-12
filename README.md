@@ -55,3 +55,12 @@ The choice between while and for is arbitrary, based on which seems clearer. The
 # 1.4 Symbolic Constants  
 [Fahrenheit to Celsius conversion using SYMBOLIC CONSTANTS](ch1/FtoC_for_SYMBOL.c)  
 # 1.5 Character Input and Output  
+c = getchar();
+putchar(c); - "Calls to putchar and printf may be interleaved"
+## 1.5.1 File Copying  
+'''
+read a character  
+    while (character is not end-of-file indicator)
+        output the character just read
+        read next character
+'''
