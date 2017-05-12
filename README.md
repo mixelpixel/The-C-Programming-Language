@@ -4,6 +4,7 @@ Reading the seminal (if not outdated) book by By Brian W. Kernighan and Dennis M
 This book is a little "outdated", but nevertheless, very well written. Click these links for an [overview of K&R vs other C standards](http://www.electronicdesign.com/dev-tools/what-s-difference-between-c-now-and-then); for a [list of C programming books](http://stackoverflow.com/a/562377/5225057); or, for the [C language standards](http://stackoverflow.com/a/83763/5225057).  
 <details><summary> ...and for reference with tricky parts</summary><a href="http://www.eng.uerj.br/~fariasol/disciplinas/LABPROG/C_language/Kernighan_and_Ritchie/solved-exercises/solved-exercises.html/">Click this link for answers</a>.</details><br>  
 
+# FWIW  
 I am working with **Terminal.app** version 2.7.2 (388.1) on **macOS Sierra** version 10.12.4 (16E195). So far I am compiling the Exercise programs with `cc` like so: `$  cc hello.c`. I am running the resulting executable file like so: `$  ./a.out`. Nothing fancy.
 
 # Chapter 1 - A Tutorial Introduction  
