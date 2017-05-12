@@ -73,3 +73,5 @@ read a character
 [Exercise 1-6](ch1/Ex1-6.c)  
 [Exercise 1-7](ch1/Ex1-7.c)  
 ## 1.5.2 Character Counting  
+[counting input characters version 1](ch1/char_count_v1.c)
+[counting input characters version 2](ch1/char_count_v2.c)
