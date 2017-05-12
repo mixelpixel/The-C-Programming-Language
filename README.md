@@ -58,9 +58,9 @@ The choice between while and for is arbitrary, based on which seems clearer. The
 c = getchar();
 putchar(c); - "Calls to putchar and printf may be interleaved"
 ## 1.5.1 File Copying  
-'''
+```
 read a character  
     while (character is not end-of-file indicator)
         output the character just read
         read next character
-'''
+```
