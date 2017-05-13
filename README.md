@@ -132,3 +132,5 @@ int main(void)
 [counting input characters version 1](ch1/1.5.2_char_count_v1.c)  
 [counting input characters version 2](ch1/1.5.2_char_count_v2.c)  
 ## 1.5.3 Line Counting  
+"the standard library ensures that an input text stream appears as a sequence of lines, each terminated by a newline."(K&R)  
+[count lines in input](ch1/1.5.3_line_count.c)  
