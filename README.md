@@ -11,7 +11,7 @@ This book is a little "outdated", but nevertheless, very well written. Click the
 
 # Chapter 1 - A Tutorial Introduction  
 # 1.1 Getting Started  
-As an example of what is now an "outdated" style of C in the book, [the first exercise](ch1/hello.c) does not include declaring a functions return type and setting a return value:  
+As an example of what is now an "outdated" style of C in the book, [the first exercise](ch1/ch1/1.1_hello.c) does not include declaring a functions return type and setting a return value:  
 ```c
 #include <stdio.h>
 
