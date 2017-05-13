@@ -53,6 +53,7 @@ int main(void)    // <--------- explicit statement of calling main with no varia
 `int main(void) { /* ... */ }`"  
 ...and [§6.7.6.3 6.7.6.3 Function declarators (including prototypes), Semantics, paragraph 10 (pg.133)](http://www.open-std.org/jtc1/sc22/wg14/www/docs/n1570.pdf):  
 "10 The special case of an unnamed parameter of type void as the only item in the list specifies that the function has no parameters."  
+### My first C program!
 [Hello, World!](ch1/1.1_hello.c)  
 ### Exercise 1-1
 [See what errors you can get](ch1/1.1_ex1-1_hello.c)  
