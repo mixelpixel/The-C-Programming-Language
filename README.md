@@ -53,7 +53,8 @@ int main(void)    // <--------- explicit statement of calling main with no varia
 `int main(void) { /* ... */ }`"  
 ...and [§6.7.6.3 6.7.6.3 Function declarators (including prototypes), Semantics, paragraph 10 (pg.133)](http://www.open-std.org/jtc1/sc22/wg14/www/docs/n1570.pdf):  
 "10 The special case of an unnamed parameter of type void as the only item in the list specifies that the function has no parameters."  
-
+[See what errors you can get](ch1/1.1_ex1-1_hello.c) (Exercise 1-1)  
+[Try out valid and invalid escape characters](ch1/1.1_ex1-2_hello.c) (Exercise 1-2)
 # 1.2 Variables and Arithmetic Expressions  
 The following are examples of a "pre-test loop" - as contrasted to a "post-test loop", e.g. a ["Do while loop"](ch3).  
 ```
@@ -63,8 +64,8 @@ The following are examples of a "pre-test loop" - as contrasted to a "post-test 
 ```
 Converting Fahrenheit and Celsius with a "while" statement:  
 [Fahrenheit to Celsius conversion: integer](ch1/1.2_FtoC.c)  
-[Fahrenheit to Celsius conversion: floating-point](ch1/1.2_FtoC_float.c) (Exercise 1-3)  
-[Celsius to Fahrenheit conversion: floating point](ch1/1.2_CtoF_float.c) (Exercise 1-4)  
+[Fahrenheit to Celsius conversion: floating-point](ch1/1.2_ex1-3_FtoC_float.c) (Exercise 1-3)  
+[Celsius to Fahrenheit conversion: floating point](ch1/1.2_ex1-4_CtoF_float.c) (Exercise 1-4)  
 # 1.3 The for statement  
 ```
     for (initialization prior to loop; test condition controls loop; incremental step after loop body action)  
