@@ -113,7 +113,7 @@ Recall from [Section 1.3 The for statement](https://github.com/mixelpixel/The-C-
 ```
     for (initialization prior to loop; test condition controls loop; incremental step after loop body action)  
         action; /* for loop body. after the pre-test condition test or an incremental step, condition  
-                   is re-evaluated and repeated or exited if test condition not satisfied */  
+                   is re-evaluated and the action repeated or exited if test condition not satisfied */  
 ```
 Note: "...the grammatical rules of C require that a for statement have a body. The isolated semicolon, called a null statement, is there to satisfy that requirement. We put it on a separate line to make it visible." e.g.  
 ```
