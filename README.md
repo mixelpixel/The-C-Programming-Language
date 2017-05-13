@@ -115,9 +115,9 @@ read a character() <----- Do K&R mean "text stream" by "character"?
 [file input version 1](ch1/1.5.1_file_copying_v1.c)  
 [file input version 2](ch1/1.5.1_file_copying_v2.c)  
 ### Exercise 1-6
-[Exercise 1-6](ch1/1.5.1_ex1-6.c)  
+[Verify that the expression getchar() != EOF is 0 or 1.](ch1/1.5.1_ex1-6.c)  
 ### Exercise 1-7
-[Exercise 1-7](ch1/1.5.1_ex1-7.c)  
+[Print the value of EOF](ch1/1.5.1_ex1-7.c)  
 ## 1.5.2 Character Counting  
 Recall from [Section 1.3 The for statement](https://github.com/mixelpixel/The-C-Programming-Language#13-the-for-statement) the for-loop syntax:  
 ```
