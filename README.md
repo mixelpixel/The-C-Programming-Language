@@ -11,7 +11,7 @@ This book is a little "outdated", but nevertheless, very well written. Click the
 
 # Chapter 1 - A Tutorial Introduction  
 # 1.1 Getting Started  
-As an example of what is now an "outdated" style of C in the book, [the first exercise](ch1/1.1_hello.c) does not include declaring a functions return type and setting a return value:  
+As an example of what is now an "outdated" style of C in the book, [the "Hello, world!" program](ch1/1.1_hello.c) does not include declaring a functions return type and setting a return value:  
 ```c
 #include <stdio.h>
 
@@ -53,6 +53,7 @@ int main(void)    // <--------- explicit statement of calling main with no varia
 `int main(void) { /* ... */ }`"  
 ...and [§6.7.6.3 6.7.6.3 Function declarators (including prototypes), Semantics, paragraph 10 (pg.133)](http://www.open-std.org/jtc1/sc22/wg14/www/docs/n1570.pdf):  
 "10 The special case of an unnamed parameter of type void as the only item in the list specifies that the function has no parameters."  
+[Hello, World!](ch1/1.1_hello.c)  
 ### Exercise 1-1
 [See what errors you can get](ch1/1.1_ex1-1_hello.c)  
 ### Exercise 1-2
