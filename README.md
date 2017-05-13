@@ -146,3 +146,7 @@ int main(void)
 ### Exercise 1-8
 [count blanks, tabs and lines](ch1/1.5.3_ex1-8.c)  
 An interesting solution to exercise 1-8, the program handles input from text files which do not end with a new line](http://www.eng.uerj.br/~fariasol/disciplinas/LABPROG/C_language/Kernighan_and_Ritchie/solved-exercises/solved-exercises.html/krx108.html).  
+### Exercise 1-9  
+[1-9](ch1/1.5.3_ex1-9.c)
+### Exercise 1-10
+[1-10](ch1/1.5.3_ex1-10.c)
