@@ -62,9 +62,9 @@ The following are examples of a "pre-test loop" - as contrasted to a "post-test 
     }
 ```
 Converting Fahrenheit and Celsius with a "while" statement:  
-[Fahrenheit to Celsius conversion: integer](ch1/FtoC.c)  
-[Fahrenheit to Celsius conversion: floating-point](ch1/FtoC_float.c) (Exercise 1-3)  
-[Celsius to Fahrenheit conversion: floating point](ch1/CtoF_float.c) (Exercise 1-4)  
+[Fahrenheit to Celsius conversion: integer](ch1/1.2_FtoC.c)  
+[Fahrenheit to Celsius conversion: floating-point](ch1/1.2_FtoC_float.c) (Exercise 1-3)  
+[Celsius to Fahrenheit conversion: floating point](ch1/1.2_CtoF_float.c) (Exercise 1-4)  
 # 1.3 The for statement  
 ```
     for (initialization prior to loop; test condition controls loop; incremental step after loop body action)  
