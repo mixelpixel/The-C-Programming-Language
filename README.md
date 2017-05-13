@@ -104,10 +104,10 @@ read a character()
 1. I am a little confused about how "file" is being used for "file input" and how "character" is being used - `getchar();` appears to read in an entire line of text in the while loop, and not "one char at a time" nor one "file" at a time... Also, it seems to only read so far as a "new line" or "Enter" (not sure how they differ?) Perhaps this is just loose use of terms (or my loose understanding), but I am left a little confused as to what the type "char" means, and, how K&R are using "file" and "character". Also not solid on newline (10) vs. EOF (-1) ...but it's working. Mostly I am thrown by K&R's description of char. Perhaps I'll understand better by [Chapter 7](ch7/).  
 2. Exercise 1-6's evaluation results in 0 or 1, but EOF - per Exercise 1-7 - has a value of -1. Okay... so EOF = -1 and `getchar() != EOF` evaluates to either 0 (false) or 1 (true)... So why/how does ctrl+d = -1? I see that ctrl+c and ctrl+z don't evaluate, they simple exit from the program. Ah-ha - it appears that C simply does not have a type class of Boolean and achieves a true/false distinction where zero is false and non-zero is true. Per: https://www.le.ac.uk/users/rjm1/cotter/page_37.htm But why/how does `getchar() = EOF` always evaluate to -1? Ahhh ::facepalm:: I was doing an assignment of c = EOF (resulting in c having the EOF value of -1) instead of a comparison operator `==`... it should be `getchar() == EOF`. And we're good: ctrl+d enters an EOF value of -1 and the equals/not equals evaluations are consistent as true (1, or not zero) and false(0). Not sure why \\n newline has a value of 10, but will save that question for later.    
 
-[file input version 1](ch1/file_copying_v1.c)  
-[file input version 2](ch1/file_copying_v2.c)  
-[Exercise 1-6](ch1/Ex1-6.c)  
-[Exercise 1-7](ch1/Ex1-7.c)  
+[file input version 1](ch1/1.5.1_file_copying_v1.c)  
+[file input version 2](ch1/1.5.1_file_copying_v2.c)  
+[Exercise 1-6](ch1/1.5.1_ex1-6.c)  
+[Exercise 1-7](ch1/1.5.1_ex1-7.c)  
 ## 1.5.2 Character Counting  
 Recall from [Section 1.3 The for statement](https://github.com/mixelpixel/The-C-Programming-Language#13-the-for-statement) the for-loop syntax:  
 ```
@@ -115,7 +115,7 @@ Recall from [Section 1.3 The for statement](https://github.com/mixelpixel/The-C-
         action; /* for loop body. after the pre-test condition test or an incremental step, condition  
                    is re-evaluated and the action repeated or exited if test condition not satisfied */  
 ```
-Note: "...the grammatical rules of C require that a for statement have a body. The isolated semicolon, called a null statement, is there to satisfy that requirement. We put it on a separate line to make it visible." e.g.  
+Note: "...the grammatical rules of C require that a for statement have a body. The isolated semicolon, called a null statement, is there to satisfy that requirement. We put it on a separate line to make it visible."(K&R) e.g.  
 ```
 #include <stdio.h>
 
