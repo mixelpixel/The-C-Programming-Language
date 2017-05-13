@@ -91,13 +91,13 @@ putchar(c); - "Calls to putchar and printf may be interleaved"
 "A text stream is a sequence of characters divided into lines; each line consists of zero or more characters followed by a newline character...The standard library provides several functions for reading or writing one character at a time, of which getchar and putchar are the simplest. Each time it is called, getchar reads the next input character from a text stream and returns that as its value."(K&R)  
 ## 1.5.1 File Copying  
 ```
-read a character()
+read a character() <----- Do K&R mean "text stream" by "character"?
 {
     declare variable type;
     initialize variable to get character;
     while (character is not end-of-file indicator) {
         output the character just read;
-        read next character;
+        read a character;
     }
     return value;
 }
