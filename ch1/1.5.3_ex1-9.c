@@ -1,4 +1,6 @@
-// Exercise 1-8. Write a program to count blanks, tabs, and newlines.
+// Exercise 1-9. Write a program to copy its input to its output,
+//               replacing each string of one or more blanks by a
+//               single blank.
 
 #include <stdio.h>
 
