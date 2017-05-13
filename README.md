@@ -107,8 +107,6 @@ read a character()
 [Exercise 1-6](ch1/Ex1-6.c)  
 [Exercise 1-7](ch1/Ex1-7.c)  
 ## 1.5.2 Character Counting  
-[counting input characters version 1](ch1/char_count_v1.c)  
-[counting input characters version 2](ch1/char_count_v2.c)  
 Recall from [Section 1.3 The for statement](https://github.com/mixelpixel/The-C-Programming-Language#13-the-for-statement) the for-loop syntax:  
 ```
     for (initialization prior to loop; test condition controls loop; incremental step after loop body action)  
@@ -128,3 +126,6 @@ int main(void)
         printf("%.0f\n", nc);
 }
 ```
+[counting input characters version 1](ch1/char_count_v1.c)  
+[counting input characters version 2](ch1/char_count_v2.c)  
+## 1.5.3 Line Counting  
