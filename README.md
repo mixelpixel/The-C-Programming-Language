@@ -6,7 +6,7 @@ This book is a little "outdated", but nevertheless, very well written. Click the
 # FWIW  
 1. I am working with **Terminal.app** version 2.7.2 (388.1) on **macOS Sierra** version 10.12.4 (16E195). So far I am compiling the Exercise programs with `cc` like so: `$  cc hello.c`. I am running the resulting executable file like so: `$  ./a.out`. Nothing fancy.  
 2. Note: in general if there are quote marks around a sentence or long passage, it is from the K&R text, tho I will try and clearly indicate like so: "quoted text"(K&R).
-3. <details><summary> ...and for reference with tricky parts</summary><a href="http://www.eng.uerj.br/~fariasol/disciplinas/LABPROG/C_language/Kernighan_and_Ritchie/solved-exercises/solved-exercises.html/">Click this link for answers</a>.</details><br>  
+<details><summary> ...and for reference with tricky parts</summary><a href="http://www.eng.uerj.br/~fariasol/disciplinas/LABPROG/C_language/Kernighan_and_Ritchie/solved-exercises/solved-exercises.html/">Click this link for answers</a>.</details><br>  
 
 
 # Chapter 1 - A Tutorial Introduction  
