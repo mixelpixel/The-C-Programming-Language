@@ -88,6 +88,7 @@ Some additional references for a [" while loop in C"](https://www.tutorialspoint
 # 1.5 Character Input and Output  
 c = getchar(); - Assigns to `c` the value of `getchar();` input  
 putchar(c); - "Calls to putchar and printf may be interleaved"  
+"A text stream is a sequence of characters divided into lines; each line consists of zero or more characters followed by a newline character...The standard library provides several functions for reading or writing one character at a time, of which getchar and putchar are the simplest. Each time it is called, getchar reads the next input character from a text stream and returns that as its value."(K&R)  
 ## 1.5.1 File Copying  
 ```
 read a character()
@@ -102,7 +103,7 @@ read a character()
 }
 ```
 
-1. I am a little confused about how "file" is being used for "file input" and how "character" is being used - `getchar();` appears to read in an entire line of text in the while loop, and not "one char at a time" nor one "file" at a time... Also, it seems to only read so far as a "new line" or "Enter" (not sure how they differ?) Perhaps this is just loose use of terms (or my loose understanding), but I am left a little confused as to what the type "char" means, and, how K&R are using "file" and "character". Also not solid on newline (10) vs. EOF (-1) ...but it's working. Mostly I am thrown by K&R's description of char. Perhaps I'll understand better by [Chapter 7](ch7/).  
+1. I am a little confused about how "file" is being used for "file input" and how "character" is being used - `getchar();` appears to read in an entire line of text in the while loop, and not "one char at a time" nor one "file" at a time... Also, it seems to only read so far as a "new line" or "Enter" (not sure how they differ?) Perhaps this is just loose use of terms (or my loose understanding), but I am left a little confused as to what the type "char" means, and, how K&R are using "file" and "character". Also not solid on newline (10) vs. EOF (-1) ...but it's working. Mostly I am thrown by K&R's description of char. Perhaps I'll understand better by [Chapter 7](ch7/) when input from files is discussed.  
 2. Exercise 1-6's evaluation results in 0 or 1, but EOF - per Exercise 1-7 - has a value of -1. Okay... so EOF = -1 and `getchar() != EOF` evaluates to either 0 (false) or 1 (true)... So why/how does ctrl+d = -1? I see that ctrl+c and ctrl+z don't evaluate, they simple exit from the program. Ah-ha - it appears that C simply does not have a type class of Boolean and achieves a true/false distinction where zero is false and non-zero is true. Per: https://www.le.ac.uk/users/rjm1/cotter/page_37.htm But why/how does `getchar() = EOF` always evaluate to -1? Ahhh ::facepalm:: I was doing an assignment of c = EOF (resulting in c having the EOF value of -1) instead of a comparison operator `==`... it should be `getchar() == EOF`. And we're good: ctrl+d enters an EOF value of -1 and the equals/not equals evaluations are consistent as true (1, or not zero) and false(0). Not sure why \\n newline has a value of 10, but will save that question for later.    
 
 [file input version 1](ch1/1.5.1_file_copying_v1.c)  
