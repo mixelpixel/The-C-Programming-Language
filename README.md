@@ -83,7 +83,7 @@ increment step**
 The choice between while and for is arbitrary, based on which seems clearer. The for is usually appropriate for loops in which the initialization and increment are single statements and logically related, since it is more compact than while and it keeps the loop control statements together in one place."(K&R)  
 [Fahrenheit to Celsius conversion with a "for" statement](ch1/1.3_ex1-5_FtoC_for_reverse.c) (Exercise 1-5)  
 # 1.4 Symbolic Constants  
-[Fahrenheit to Celsius conversion using SYMBOLIC CONSTANTS](ch1/FtoC_for_SYMBOL.c)  
+[Fahrenheit to Celsius conversion using SYMBOLIC CONSTANTS](ch1/1.4_FtoC_for_SYMBOL.c)  
 # 1.5 Character Input and Output  
 c = getchar(); - Assigns to `c` the value of `getchar();` input  
 putchar(c); - "Calls to putchar and printf may be interleaved"  
