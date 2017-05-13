@@ -128,6 +128,6 @@ int main(void)
         printf("%.0f\n", nc);
 }
 ```
-[counting input characters version 1](ch1/char_count_v1.c)  
-[counting input characters version 2](ch1/char_count_v2.c)  
+[counting input characters version 1](ch1/1.5.2_char_count_v1.c)  
+[counting input characters version 2](ch1/1.5.2_char_count_v2.c)  
 ## 1.5.3 Line Counting  
