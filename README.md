@@ -5,7 +5,8 @@ This book is a little "outdated", but nevertheless, very well written. Click the
 <details><summary> ...and for reference with tricky parts</summary><a href="http://www.eng.uerj.br/~fariasol/disciplinas/LABPROG/C_language/Kernighan_and_Ritchie/solved-exercises/solved-exercises.html/">Click this link for answers</a>.</details><br>  
 
 # FWIW  
-I am working with **Terminal.app** version 2.7.2 (388.1) on **macOS Sierra** version 10.12.4 (16E195). So far I am compiling the Exercise programs with `cc` like so: `$  cc hello.c`. I am running the resulting executable file like so: `$  ./a.out`. Nothing fancy.
+1. I am working with **Terminal.app** version 2.7.2 (388.1) on **macOS Sierra** version 10.12.4 (16E195). So far I am compiling the Exercise programs with `cc` like so: `$  cc hello.c`. I am running the resulting executable file like so: `$  ./a.out`. Nothing fancy.  
+2. Note: in general if there are quote marks around a sentence or long passage, it is from the K&R text, tho I will try and clearly indicate like so: "quoted text"(K&R).
 
 # Chapter 1 - A Tutorial Introduction  
 # 1.1 Getting Started  
@@ -23,6 +24,7 @@ main()
 return_type function_name( parameter list )
 {
    body of the function
+   function return value
 }
 ```
 ...like so:  
@@ -35,14 +37,40 @@ int main()        // <--------- function return type declaration
   return 0;       // <-------------------- function return value
 }
 ```
+Also, per [this Stack Overflow answer](http://stackoverflow.com/a/12225214/5225057) it is also the convention that C programs should be written with main(void), e.g.  
+```c
+#include <stdio.h>
+
+int main(void)    // <--------- explicit statement of calling main with no variables
+{
+  printf("hello, world\n");
+  return 0;
+}
+```
+[see §5.1.2.2.1 Program startup, paragraph 1 (pg.13)](http://www.open-std.org/jtc1/sc22/wg14/www/docs/n1570.pdf):  
+"1 The function called at program startup is named main. The implementation declares no prototype for this function. It shall be defined with a return type of int and with no parameters:  
+`int main(void) { /* ... */ }`"  
+...and [§6.7.6.3 6.7.6.3 Function declarators (including prototypes), Semantics, paragraph 10 (pg.133)](http://www.open-std.org/jtc1/sc22/wg14/www/docs/n1570.pdf):  
+"10 The special case of an unnamed parameter of type void as the only item in the list specifies that the function has no parameters."  
+
 # 1.2 Variables and Arithmetic Expressions  
+The following are examples of a "pre-test loop" - as contrasted to a "post-test loop", e.g. a ["Do while loop"](ch3).  
+```
+    while ( test condition ) {
+        Code to execute while the test condition is satisfied
+    } 
+```
 Converting Fahrenheit and Celsius with a "while" statement:  
 [Fahrenheit to Celsius conversion: integer](ch1/FtoC.c)  
 [Fahrenheit to Celsius conversion: floating-point](ch1/FtoC_float.c) (Exercise 1-3)  
 [Celsius to Fahrenheit conversion: floating point](ch1/CtoF_float.c) (Exercise 1-4)  
 # 1.3 The for statement  
+```
+    for (initialization prior to loop; test condition controls loop; incremental step after loop body action)  
+        action;
+```
 [Fahrenheit to Celsius conversion with a "for" statement](ch1/FtoC_for.c)  
-"The for statement is a loop, a generalization of the while. If you compare it to the earlier while, its operation should be clear. Within the parentheses, there are three parts, separated by semicolons. **The first part, the initialization**  
+Also a "pre-test loop", "The for statement is a loop, a generalization of the while. If you compare it to the earlier while, its operation should be clear. Within the parentheses, there are three parts, separated by semicolons. **The first part, the initialization**  
 `fahr = 0`  
 **is done once, before the loop proper is entered. The second part is the test or condition that controls the loop:**  
 `fahr <= 300`  
@@ -50,23 +78,29 @@ Converting Fahrenheit and Celsius with a "while" statement:
 increment step**  
 `fahr = fahr + 20`  
 **is executed, and the condition re-evaluated. The loop terminates if the condition has become false.** As with the while, the body of the loop can be a single statement or a group of statements enclosed in braces. The initialization, condition and increment can be any expressions.  
-The choice between while and for is arbitrary, based on which seems clearer. The for is usually appropriate for loops in which the initialization and increment are single statements and logically related, since it is more compact than while and it keeps the loop control statements together in one place."  
+The choice between while and for is arbitrary, based on which seems clearer. The for is usually appropriate for loops in which the initialization and increment are single statements and logically related, since it is more compact than while and it keeps the loop control statements together in one place."(K&R)  
 [Fahrenheit to Celsius conversion with a "for" statement](ch1/FtoC_for_reverse.c) (Exercise 1-5)  
 # 1.4 Symbolic Constants  
 [Fahrenheit to Celsius conversion using SYMBOLIC CONSTANTS](ch1/FtoC_for_SYMBOL.c)  
 # 1.5 Character Input and Output  
-c = getchar();  
+c = getchar(); - Assigns to `c` the value of `getchar();` input  
 putchar(c); - "Calls to putchar and printf may be interleaved"  
 ## 1.5.1 File Copying  
 ```
-read a character  
-    while (character is not end-of-file indicator)
-        output the character just read
-        read next character
+read a character()
+{
+    declare variable type;
+    initialize variable to get character;
+    while (character is not end-of-file indicator) {
+        output the character just read;
+        read next character;
+    }
+    return value;
+}
 ```
 
-1. I am a little confused about how "file" is being used for "file input" and how "character" is being used - `getchar();` appears to read in an entire line of text in the while loop, and not "one char at a time" nor one "file" at a time... Perhaps this is just loose use of terms (or my loose understanding), but I am left a little confused as to what "char" means. Also not solid on newline (10) vs. EOF (-1) ...but it's working. Mostly I am thrown by K&R's description of char. Perhaps I'll understand better by [Chapter 7](ch7/).  
-2. Exercise 1-6's evaluation results in 0 or 1, but EOF - per Exercise 1-7 - has a value of -1. Okay... so EOF = -1 and `getchar() != EOF` evaluates to either 0 (false) or 1 (true)... So why/how does ctrl+d = -1? I see that ctrl+c and ctrl+z don't evaluate they simple exit from the program. Ah-ha - it appears that C simply does not have a type class of Boolean and achieves a true/false distinction where zero is false and non-zero is true. Per: https://www.le.ac.uk/users/rjm1/cotter/page_37.htm But why/how does `getchar() = EOF` always evaluate to -1? Ahhh ::facepalm:: I was doing an assignment of c = EOF (resulting in c having the EOF value of -1) instead of a comparison operator `==`... it should be `getchar() == EOF`. And we're good: ctrl+d enters an EOF value of -1 and the equals/not equals evaluations are consistent as true (1, or not zero) and false(0). Not sure why \\n newline has a value of 10, but will save that question for later.    
+1. I am a little confused about how "file" is being used for "file input" and how "character" is being used - `getchar();` appears to read in an entire line of text in the while loop, and not "one char at a time" nor one "file" at a time... Also, it seems to only read so far as a "new line" or "Enter" (not sure how they differ?) Perhaps this is just loose use of terms (or my loose understanding), but I am left a little confused as to what the type "char" means, and, how K&R are using "file" and "character". Also not solid on newline (10) vs. EOF (-1) ...but it's working. Mostly I am thrown by K&R's description of char. Perhaps I'll understand better by [Chapter 7](ch7/).  
+2. Exercise 1-6's evaluation results in 0 or 1, but EOF - per Exercise 1-7 - has a value of -1. Okay... so EOF = -1 and `getchar() != EOF` evaluates to either 0 (false) or 1 (true)... So why/how does ctrl+d = -1? I see that ctrl+c and ctrl+z don't evaluate, they simple exit from the program. Ah-ha - it appears that C simply does not have a type class of Boolean and achieves a true/false distinction where zero is false and non-zero is true. Per: https://www.le.ac.uk/users/rjm1/cotter/page_37.htm But why/how does `getchar() = EOF` always evaluate to -1? Ahhh ::facepalm:: I was doing an assignment of c = EOF (resulting in c having the EOF value of -1) instead of a comparison operator `==`... it should be `getchar() == EOF`. And we're good: ctrl+d enters an EOF value of -1 and the equals/not equals evaluations are consistent as true (1, or not zero) and false(0). Not sure why \\n newline has a value of 10, but will save that question for later.    
 
 [file input version 1](ch1/file_copying_v1.c)  
 [file input version 2](ch1/file_copying_v2.c)  
@@ -77,8 +111,9 @@ read a character
 [counting input characters version 2](ch1/char_count_v2.c)  
 Recall from [Section 1.3 The for statement](https://github.com/mixelpixel/The-C-Programming-Language#13-the-for-statement) the for-loop syntax:  
 ```
-for(initialization prior to loop; test condition controls loop; incremental step after loop body action)
-    action; /* for loop body. after incremental step, condition is re-evaluated and repeated or exited */
+    for (initialization prior to loop; test condition controls loop; incremental step after loop body action)  
+        action; /* for loop body. after the pre-test condition test or an incremental step, condition  
+                   is re-evaluated and repeated or exited if test condition not satisfied */  
 ```
 Note: "...the grammatical rules of C require that a for statement have a body. The isolated semicolon, called a null statement, is there to satisfy that requirement. We put it on a separate line to make it visible." e.g.  
 ```
