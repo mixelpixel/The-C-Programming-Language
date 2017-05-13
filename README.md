@@ -53,8 +53,10 @@ int main(void)    // <--------- explicit statement of calling main with no varia
 `int main(void) { /* ... */ }`"  
 ...and [§6.7.6.3 6.7.6.3 Function declarators (including prototypes), Semantics, paragraph 10 (pg.133)](http://www.open-std.org/jtc1/sc22/wg14/www/docs/n1570.pdf):  
 "10 The special case of an unnamed parameter of type void as the only item in the list specifies that the function has no parameters."  
-[See what errors you can get](ch1/1.1_ex1-1_hello.c) (Exercise 1-1)  
-[Try out valid and invalid escape characters](ch1/1.1_ex1-2_hello.c) (Exercise 1-2)
+### Exercise 1-1
+[See what errors you can get](ch1/1.1_ex1-1_hello.c)  
+### Exercise 1-2
+[Try out valid and invalid escape characters](ch1/1.1_ex1-2_hello.c)  
 # 1.2 Variables and Arithmetic Expressions  
 The following are examples of a "pre-test loop" - as contrasted to a "post-test loop", e.g. a ["Do while loop"](ch3).  
 ```
@@ -108,8 +110,8 @@ read a character() <----- Do K&R mean "text stream" by "character"?
 
 [file input version 1](ch1/1.5.1_file_copying_v1.c)  
 [file input version 2](ch1/1.5.1_file_copying_v2.c)  
-[Exercise 1-6](ch1/1.5.1_ex1-6.c)  
-[Exercise 1-7](ch1/1.5.1_ex1-7.c)  
+[Exercise 1-6](ch1/1.5.1_ex1-6.c) (Exercise 1-6)  
+[Exercise 1-7](ch1/1.5.1_ex1-7.c) (Exercise 1-7)  
 ## 1.5.2 Character Counting  
 Recall from [Section 1.3 The for statement](https://github.com/mixelpixel/The-C-Programming-Language#13-the-for-statement) the for-loop syntax:  
 ```
@@ -135,5 +137,5 @@ int main(void)
 ## 1.5.3 Line Counting  
 "the standard library ensures that an input text stream appears as a sequence of lines, each terminated by a newline."(K&R)  
 [count lines in input](ch1/1.5.3_line_count.c)  
-[count blanks, tabs and lines](ch1/1.5.3_ex1-8.c)  
+[count blanks, tabs and lines](ch1/1.5.3_ex1-8.c) (Exercise 1-8)  
 An interesting solution to exercise 1-8, the program handles input from text files which do not end with a new line](http://www.eng.uerj.br/~fariasol/disciplinas/LABPROG/C_language/Kernighan_and_Ritchie/solved-exercises/solved-exercises.html/krx108.html).  
