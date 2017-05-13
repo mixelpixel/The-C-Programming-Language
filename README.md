@@ -135,3 +135,5 @@ int main(void)
 ## 1.5.3 Line Counting  
 "the standard library ensures that an input text stream appears as a sequence of lines, each terminated by a newline."(K&R)  
 [count lines in input](ch1/1.5.3_line_count.c)  
+[count blanks, tabs and lines](ch1/1.5.3_ex1-8.c)
+An interesting solution to exercise 1-8, the program handles input from text files which do not end with a new line](http://www.eng.uerj.br/~fariasol/disciplinas/LABPROG/C_language/Kernighan_and_Ritchie/solved-exercises/solved-exercises.html/krx108.html).  
