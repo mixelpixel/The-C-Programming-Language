@@ -67,8 +67,10 @@ The following are examples of a "pre-test loop" - as contrasted to a "post-test 
 ```
 Converting Fahrenheit and Celsius with a "while" statement:  
 [Fahrenheit to Celsius conversion: integer](ch1/1.2_FtoC.c)  
-[Fahrenheit to Celsius conversion: floating-point](ch1/1.2_ex1-3_FtoC_float.c) (Exercise 1-3)  
-[Celsius to Fahrenheit conversion: floating point](ch1/1.2_ex1-4_CtoF_float.c) (Exercise 1-4)  
+### Exercise 1-3
+[Fahrenheit to Celsius conversion: floating-point](ch1/1.2_ex1-3_FtoC_float.c)  
+### Exercise 1-4
+[Celsius to Fahrenheit conversion: floating point](ch1/1.2_ex1-4_CtoF_float.c)  
 # 1.3 The for statement  
 ```
     for (initialization prior to loop; test condition controls loop; incremental step after loop body action)  
@@ -83,8 +85,9 @@ Also a "pre-test loop", "The for statement is a loop, a generalization of the wh
 increment step**  
 `fahr = fahr + 20`  
 **is executed, and the condition re-evaluated. The loop terminates if the condition has become false.** As with the while, the body of the loop can be a single statement or a group of statements enclosed in braces. The initialization, condition and increment can be any expressions.  
-The choice between while and for is arbitrary, based on which seems clearer. The for is usually appropriate for loops in which the initialization and increment are single statements and logically related, since it is more compact than while and it keeps the loop control statements together in one place."(K&R)  
-[Fahrenheit to Celsius conversion with a "for" statement](ch1/1.3_ex1-5_FtoC_for_reverse.c) (Exercise 1-5)  
+The choice between while and for is arbitrary, based on which seems clearer. The for is usually appropriate for loops in which the initialization and increment are single statements and logically related, since it is more compact than while and it keeps the loop control statements together in one place."(K&R)
+### Exercise 1-5  
+[Fahrenheit to Celsius conversion with a "for" statement](ch1/1.3_ex1-5_FtoC_for_reverse.c)  
 Some additional references for a [" while loop in C"](https://www.tutorialspoint.com/cprogramming/c_while_loop.htm), ["for, while, and do while loops in C"](http://www.cprogramming.com/tutorial/c/lesson3.html), and ["if statements in C"](http://www.cprogramming.com/tutorial/c/lesson2.html), especially in regards to "true" (a non-zero value) and "false" (zero).
 # 1.4 Symbolic Constants  
 [Fahrenheit to Celsius conversion using SYMBOLIC CONSTANTS](ch1/1.4_FtoC_for_SYMBOL.c)  
@@ -111,8 +114,10 @@ read a character() <----- Do K&R mean "text stream" by "character"?
 
 [file input version 1](ch1/1.5.1_file_copying_v1.c)  
 [file input version 2](ch1/1.5.1_file_copying_v2.c)  
-[Exercise 1-6](ch1/1.5.1_ex1-6.c) (Exercise 1-6)  
-[Exercise 1-7](ch1/1.5.1_ex1-7.c) (Exercise 1-7)  
+### Exercise 1-6
+[Exercise 1-6](ch1/1.5.1_ex1-6.c)  
+### Exercise 1-7
+[Exercise 1-7](ch1/1.5.1_ex1-7.c)  
 ## 1.5.2 Character Counting  
 Recall from [Section 1.3 The for statement](https://github.com/mixelpixel/The-C-Programming-Language#13-the-for-statement) the for-loop syntax:  
 ```
@@ -138,5 +143,6 @@ int main(void)
 ## 1.5.3 Line Counting  
 "the standard library ensures that an input text stream appears as a sequence of lines, each terminated by a newline."(K&R)  
 [count lines in input](ch1/1.5.3_line_count.c)  
-[count blanks, tabs and lines](ch1/1.5.3_ex1-8.c) (Exercise 1-8)  
+### Exercise 1-8
+[count blanks, tabs and lines](ch1/1.5.3_ex1-8.c)  
 An interesting solution to exercise 1-8, the program handles input from text files which do not end with a new line](http://www.eng.uerj.br/~fariasol/disciplinas/LABPROG/C_language/Kernighan_and_Ritchie/solved-exercises/solved-exercises.html/krx108.html).  
