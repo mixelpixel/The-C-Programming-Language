@@ -6,7 +6,7 @@
                                //              define a function called main
 int main()                     //           that received no argument values
 {                              //  statements of main are enclosed in braces
-  printf("hello, world\n");    //         main calls library function printf
+  printf("Hello, world!\n");    //         main calls library function printf
   return 0;
 }                              //       to print this sequence of characters
                                //        \n represents the newline character
