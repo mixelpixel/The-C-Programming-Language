@@ -151,4 +151,5 @@ An interesting solution to exercise 1-8, the program handles input from text fil
 [Moore vs Mealy Finite State Machine](https://youtu.be/hJIST1cEf6A)
 [Replace one or more blanks with a single blank](ch1/1.5.3_ex1-9.c)
 ### Exercise 1-10
-[1-10](ch1/1.5.3_ex1-10.c)
+[Replace tabs, backspaces and slashes](ch1/1.5.3_ex1-10.c)
+## 1.5.4 Word Counting
