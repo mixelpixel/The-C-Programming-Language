@@ -5,6 +5,7 @@
 
 #include <stdio.h>
 
+/* NOTE: macOS ctrl+h for "backspace" */
 int main(void)
 {
     int c;
