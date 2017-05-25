@@ -74,7 +74,7 @@ Converting Fahrenheit and Celsius with a "while" statement:
 [Celsius to Fahrenheit conversion: floating point](ch1/1.2_ex1-4_CtoF_float.c)  
 # 1.3 The for statement  
 ```
-    for (initialization prior to loop; test condition controls loop; incremental step after loop body action)  
+    for (1. initialization prior to loop; 2. test condition controls loop: if pass test, then execute loop, or, if fail test, then end loop; 3. incremental step after loop body action)  
         action;
 ```
 [Fahrenheit to Celsius conversion with a "for" statement](ch1/1.3_FtoC_for.c)  
