@@ -26,3 +26,6 @@
 
 # Ignore compilations
 *.out
+
+# Ignore the book
+The-C-Programming-Language-2nd-Ed.pdf
